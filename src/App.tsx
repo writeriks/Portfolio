@@ -1,11 +1,11 @@
 import React from 'react'
-import Portfolio from './Components/Portfolio/Portfolio'
+import PortfolioMain from './Components/Portfolio/portfolio-main'
 
 function App() {
   return (
-    <div>
-      <Portfolio />
-    </div>
+    <>
+      <PortfolioMain />
+    </>
   )
 }
 

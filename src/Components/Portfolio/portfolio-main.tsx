@@ -1,7 +1,7 @@
 import React from 'react'
-import './Portfolio.css'
+import './portfolio-main.scss'
 
-function Portfolio() {
+function PortfolioMain() {
   return (
     <div>
       Emir Haktan Öztürk
@@ -9,4 +9,4 @@ function Portfolio() {
   )
 }
 
-export default Portfolio
+export default PortfolioMain
