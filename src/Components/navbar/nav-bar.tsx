@@ -1,9 +1,44 @@
 import React from 'react'
+import './nav-bar.scss'
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import { useSelector } from 'react-redux'
+import displayReducerSelector from '../../store/reducers/display-reducer/display-reducer-selector'
+import navBarHelper from './nav-bar-helper'
 
-function NavBar() {
+const NavBar = () => {
+  const isHamburgerMenuOpen = useSelector(displayReducerSelector.getIsHamburgerMenuOpen)
+  const { toggleHamburgerMenu } = navBarHelper
   return (
-    <div>
-
+    <div className={'nav-bar ' + (isHamburgerMenuOpen && 'active')} id='nav-bar'>
+      <div className="wrapper">
+        <div className="left">
+          <a href="#intro" className="logo">
+            <ArrowBackIosIcon viewBox="0 0 11 24" />
+            <span>emir</span>
+            <ArrowForwardIosIcon />
+          </a>
+          <div className="item-container">
+            <a href="https://github.com/writeriks" target="_blank" rel="noreferrer">
+              <GitHubIcon className="icon" />
+            </a>
+          </div>
+          <div className="item-container">
+            <a href="https://www.linkedin.com/in/emir-haktan-%C3%B6zt%C3%BCrk-b80685a6/" target="_blank" rel="noreferrer">
+              <LinkedInIcon className="icon" />
+            </a>
+          </div>
+        </div>
+        <div className="right">
+          <div className="hamburger-menu" onClick={() => toggleHamburgerMenu()}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

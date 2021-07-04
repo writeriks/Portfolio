@@ -21,7 +21,15 @@ module.exports = {
   ],
   rules: {
     'no-use-before-define': 'off',
-    'space-before-function-paren': 'off',
-    '@typescript-eslint/no-use-before-define': ['error']
+    '@typescript-eslint/no-use-before-define': ['error'],
+    '@typescript-eslint/no-unused-vars': ['error'],
+    'space-before-function-paren': 0,
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': [
+      1, {
+        extensions: ['.ts', '.tsx']
+      }
+    ],
+    semi: ['error', 'never']
   }
 }

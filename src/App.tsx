@@ -1,5 +1,4 @@
-import React from 'react'
-import PortfolioMain from './Components/Portfolio/portfolio-main'
+import PortfolioMain from './Components/portfolio-main/portfolio-main'
 
 function App() {
   return (
