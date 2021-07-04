@@ -3,7 +3,6 @@ export enum DisplayActions {
 }
 
 export interface DisplayState {
-
   isHamburgerMenuOpen: Boolean
 }
 
