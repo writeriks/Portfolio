@@ -4,6 +4,7 @@ import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import classnames from 'classnames'
 import { useSelector } from 'react-redux'
 import displayReducerSelector from '../../store/reducers/display-reducer/display-reducer-selector'
 import navBarHelper from './nav-bar-helper'
@@ -11,8 +12,9 @@ import navBarHelper from './nav-bar-helper'
 const NavBar = () => {
   const isHamburgerMenuOpen = useSelector(displayReducerSelector.getIsHamburgerMenuOpen)
   const { toggleHamburgerMenu } = navBarHelper
+  const active = classnames({ active: isHamburgerMenuOpen })
   return (
-    <div className={'nav-bar ' + (isHamburgerMenuOpen && 'active')} id='nav-bar'>
+    <div className={'nav-bar ' + active} id='nav-bar'>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
