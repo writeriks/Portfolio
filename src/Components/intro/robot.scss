@@ -110,11 +110,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow-x: visible;
 
         .inner-body-rect{
             width: 90%;
             height: 95%;
             background-color: #e4bf94;
+            overflow-x: visible;
 
             .inner-body-container{
                 width: 100%;
@@ -122,6 +124,7 @@
                 display: flex;
                 justify-content: space-between;
                 background:  linear-gradient(to bottom right, #e4bf94, rgb(214, 170, 170));
+                overflow-x: visible;
             
                 .left-arm{
                     width: 5%;
@@ -132,6 +135,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
+                    overflow-x: visible;
 
                 .left-hand{
                     width: 20px;
@@ -141,13 +145,15 @@
                     border-radius: 30%;
                     display: flex;
                     justify-content: flex-end;
+                    overflow-x: visible;
 
                         .left-hand-space{
                             width: 15px;
                             height: 17px;
                             background-color: white;
                             border-radius: 50%;
-                            transform: translate(10%, 31%);                 
+                            transform: translate(10%, 31%);    
+                            overflow-x: visible;             
                         }
                     }
                 }
@@ -161,6 +167,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
+                    overflow-x: visible;
 
                     .right-hand{
                         width: 20px;
@@ -171,12 +178,15 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-end;
+                        overflow-x: visible;
+
                         .right-hand-space{
                             width: 15px;
                             height: 17px;
                             background-color: white;
                             border-radius: 50%;
                             transform: translate(40%, 13%);
+                            overflow-x: visible;
                         }
                     }
                 }
@@ -188,6 +198,7 @@
         height: 150px;
         display: flex;
         justify-content: space-around;
+        overflow-x: visible;
 
         .left{
             background-color: black;
@@ -196,6 +207,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            overflow-x: visible;
         }
         .right{
             background-color: black;
@@ -204,11 +216,13 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            overflow-x: visible;
         }
         .foot{
             width: 50px;
             height: 10px;
             background-color: black;
+            overflow-x: visible;
         }
     }
 }
