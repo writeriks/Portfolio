@@ -1,0 +1,214 @@
+.robot{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+
+    .antenna{
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(to bottom right, #c79c9c, #aa7070) ;
+        border-radius: 50%;
+        border: 5px solid black;
+        animation: rotating 4s;
+        -webkit-animation: rotating 4s linear infinite;
+
+        .white-point{
+            width: 30%;
+            height: 30%;
+            margin-top: 50%;
+            transform: translate(200%, 20%);
+            border-radius: 50%;
+            background-color: rgb(224, 221, 221);
+        }
+    }
+
+    @keyframes rotating {
+        from {
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .vertical-line{
+        width: 5px;
+        height: 10px;
+        background-color: black;
+    }
+
+    .head-square{
+        width: 120px;
+        height: 120px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+
+        .face-square{
+            width: 90%;
+            height: 90%;
+            background-color: #e4bf94;
+
+            .face-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                background:  linear-gradient(to bottom right, #e4bf94, rgb(214, 170, 170));
+
+            .top{
+                flex: 0.5;
+                display: flex;
+                justify-content: space-around;
+
+                span{
+                    margin-top: 20%;
+                    width: 20%;
+                    height: 30%;
+                    border-radius: 25%;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    span{
+                        width: 30%;
+                        height: 40%;
+                        background-color: black;
+                    }
+                }
+            }   
+    
+            .bottom{
+                flex: 0.5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .mouth{
+                    width: 60%;
+                    height: 5%;
+                    background-color: black;
+                }
+            }
+        }
+    }
+    }
+
+    .body-rect{
+        width: 120px;
+        height: 200px;
+        background-color: black;
+        border-radius: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .inner-body-rect{
+            width: 90%;
+            height: 95%;
+            background-color: #e4bf94;
+
+            .inner-body-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                background:  linear-gradient(to bottom right, #e4bf94, rgb(214, 170, 170));
+            
+                .left-arm{
+                    width: 5%;
+                    height: 50%;
+                    background-color: black;
+                    margin-top: 10%;
+                    transform: rotate(30deg) translate(-200%, 40%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                .left-hand{
+                    width: 20px;
+                    height: 20px;
+                    transform: rotate(30deg) translate(20%, 90%);
+                    background-color: black;
+                    border-radius: 30%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                        .left-hand-space{
+                            width: 15px;
+                            height: 17px;
+                            background-color: white;
+                            border-radius: 50%;
+                            transform: translate(10%, 31%);                 
+                        }
+                    }
+                }
+
+                .right-arm{
+                    width: 5%;
+                    height: 50%;
+                    background-color: black;
+                    margin-top: 10%;
+                    transform: rotate(-30deg) translate(200%, 40%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    .right-hand{
+                        width: 20px;
+                        height: 20px;
+                        transform: rotate(30deg) translate(30%, 100%);
+                        background-color: black;
+                        border-radius: 30%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        .right-hand-space{
+                            width: 15px;
+                            height: 17px;
+                            background-color: white;
+                            border-radius: 50%;
+                            transform: translate(40%, 13%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .legs{
+        width: 120px;
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+
+        .left{
+            background-color: black;
+            width: 10%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .right{
+            background-color: black;
+            width: 10%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .foot{
+            width: 50px;
+            height: 10px;
+            background-color: black;
+        }
+    }
+}

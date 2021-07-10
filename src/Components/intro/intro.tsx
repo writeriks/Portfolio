@@ -1,9 +1,10 @@
 import './intro.scss'
+import Robot from './robot'
 
 function Intro() {
   return (
-    <div className="intro" id='intro'>
-
+    <div className="intro">
+      <Robot />
     </div>
   )
 }
