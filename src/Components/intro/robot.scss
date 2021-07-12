@@ -1,10 +1,12 @@
+@import '../../style-utility/variables';
+
 .robot{
     width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    flex: 0.5;
 
     .antenna{
         width: 30px;
@@ -150,7 +152,7 @@
                         .left-hand-space{
                             width: 15px;
                             height: 17px;
-                            background-color: white;
+                            background: linear-gradient(to bottom, #6e5561, #69505f);
                             border-radius: 50%;
                             transform: translate(10%, 31%);    
                             overflow-x: visible;             
@@ -183,7 +185,7 @@
                         .right-hand-space{
                             width: 15px;
                             height: 17px;
-                            background-color: white;
+                            background: linear-gradient(to bottom, #6e5561, #69505f);
                             border-radius: 50%;
                             transform: translate(40%, 13%);
                             overflow-x: visible;
@@ -225,4 +227,75 @@
             overflow-x: visible;
         }
     }
+}
+
+@media (max-width: $tablet-view-small) {
+  .robot{
+    transform: translate(0, 3%);
+
+    .antenna {
+      width: 15px;
+      height: 17px;
+      background: linear-gradient(to bottom right, #c79c9c, #aa7070);
+      border-radius: 50%;
+      border: 3px solid black;
+      animation: rotating 4s;
+      -webkit-animation: rotating 4s linear infinite;
+    }
+
+    .head-square {
+      width: 60px;
+      height: 60px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5%;
+    }
+
+    .body-rect{
+      width: 60px;
+      height: 100px;
+      background-color: black;
+      border-radius: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: visible;
+      
+      .inner-body-rect{
+        .inner-body-container{
+        .left-arm{
+          .left-hand{
+            .left-hand-space{
+              background: linear-gradient(to bottom, #907570, #927771);
+              }
+            }
+          }
+        .right-arm{
+          .right-hand{
+            .right-hand-space{
+              background: linear-gradient(to bottom, #907570, #927771);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .legs{
+      width: 50px;
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      overflow-x: visible;
+
+      .foot {
+        width: 15px;
+        height: 10px;
+        background-color: black;
+        overflow-x: visible;
+      }
+    }
+  }
 }

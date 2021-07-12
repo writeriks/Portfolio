@@ -1,8 +1,13 @@
 @import '../../style-utility/variables';
 
 .intro{
-  background-color: white;
-  overflow: hidden;
-  
-  
+  background: linear-gradient(to bottom, #15023a, #a88b7a);
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: $tablet-view-small) {
+  .intro{
+    flex-direction: column;
+  }    
 }

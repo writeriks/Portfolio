@@ -1,0 +1,26 @@
+@import '../../style-utility/variables';
+
+.intro-name{
+  width: 100%;
+  height: 100%;
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  span{
+    font-family: $font-family-ret-ganon;
+    font-size: 50px;
+    color: white;
+  }
+}
+
+@media (max-width: $tablet-view-medium) {
+  .intro-name{
+
+    span{
+      font-size: 30px;
+    }
+  }
+}

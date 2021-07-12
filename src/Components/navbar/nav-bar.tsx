@@ -18,8 +18,8 @@ const NavBar = () => {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            <ArrowBackIosIcon viewBox="0 0 11 24" />
-            <span>emir</span>
+            <ArrowBackIosIcon />
+            <span>Emir</span>
             <ArrowForwardIosIcon />
           </a>
           <div className="item-container">
