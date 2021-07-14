@@ -1,7 +1,8 @@
 import { DisplayAction, DisplayActions, DisplayState } from './display-reducer-types'
 
 export const initialDisplayState = {
-  isHamburgerMenuOpen: false
+  isHamburgerMenuOpen: false,
+  componentInViewPort: ''
 }
 
 const displayReducer = (state: DisplayState = initialDisplayState, action: DisplayAction): DisplayState => {
@@ -10,6 +11,12 @@ const displayReducer = (state: DisplayState = initialDisplayState, action: Displ
       return {
         ...state,
         isHamburgerMenuOpen: !state.isHamburgerMenuOpen
+      }
+
+    case DisplayActions.SET_COMPONENT_IN_VIEWPORT:
+      return {
+        ...state,
+        componentInViewPort: action.componentInViewPort
       }
 
     default:

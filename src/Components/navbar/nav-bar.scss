@@ -1,9 +1,29 @@
 @import '../../style-utility/variables';
 
+
+.intro-component{
+  background-color: $color-main;
+}
+
+.portfolio-component{
+  background-color: #2f2824;
+}
+
+.works-component{
+  background-color: #172b26;
+}
+
+.testimonials-component{
+  background-color: #1e1f16;
+}
+
+.contact-component{
+  background-color: #352828;
+}
+
 .nav-bar{
   width: 100%;
   height: 70px;
-  background-color: $color-main;
   color: white;
   position: fixed;
   top: 0;

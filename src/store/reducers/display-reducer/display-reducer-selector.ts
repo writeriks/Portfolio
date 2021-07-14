@@ -6,6 +6,11 @@ class DisplayReducerSelector {
     rootStateReducer.getDisplayReducer,
     (displayReducer) => displayReducer.isHamburgerMenuOpen
   );
+
+  getComponentInViewport = createSelector(
+    rootStateReducer.getDisplayReducer,
+    (displayReducer) => displayReducer.componentInViewPort
+  );
 }
 
 const displayReducerSelector = new DisplayReducerSelector()

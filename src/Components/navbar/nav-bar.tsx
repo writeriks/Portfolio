@@ -11,10 +11,16 @@ import navBarHelper from './nav-bar-helper'
 
 const NavBar = () => {
   const isHamburgerMenuOpen = useSelector(displayReducerSelector.getIsHamburgerMenuOpen)
+  const componentInViewPort = useSelector(displayReducerSelector.getComponentInViewport)
+  console.log('🚀 ~ file: nav-bar.tsx ~ line 15 ~ NavBar ~ componentInViewPort', componentInViewPort)
+
   const { toggleHamburgerMenu } = navBarHelper
   const active = classnames({ active: isHamburgerMenuOpen })
+  const viewPortComponent = componentInViewPort.toLowerCase()
+  const color = classnames(viewPortComponent)
+
   return (
-    <div className={'nav-bar ' + active} id='nav-bar'>
+    <div className={'nav-bar ' + active + ' ' + color} id='nav-bar'>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">

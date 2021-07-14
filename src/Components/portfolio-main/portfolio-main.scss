@@ -19,6 +19,7 @@
         width: 100vw;
         height: calc(100vh - #{$nav-bar-height});
         scroll-snap-align: start;
+        overflow: hidden;
     }
   }
 
