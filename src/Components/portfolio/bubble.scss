@@ -1,0 +1,50 @@
+@import '../../style-utility/variables';
+
+@mixin box-container( $width, $color ) {
+  box-shadow: 
+    $width 0 $color, 
+    -$width 0 $color,
+    0 (-$width) $color, 
+    0 $width $color;
+  margin: $width auto;
+}
+
+@mixin bubble( $width, $color, $bgcolor ) {
+  box-shadow:
+    4*$width 0 $bgcolor, 
+    -4*$width 0 $bgcolor, 
+    0 (-4*$width) $bgcolor, 
+    0 4*$width $bgcolor,
+    $width 0 0 2*$width $bgcolor,
+    -$width 0 0 2*$width $bgcolor,
+    0 (-$width) 0 2*$width $bgcolor,
+    0 $width 0 2*$width $bgcolor,
+    5*$width 0 $color, 
+    -5*$width 0 $color,
+    0 (-5*$width) $color, 
+    0 5*$width $color,
+    0 0 0 3*$width $color,
+    0 2*$width 0 2*$width $color,
+    0 (-2*$width) 0 2*$width $color,
+    2*$width 0 0 2*$width $color,
+    (-2*$width) 0 0 2*$width $color;
+    margin: 5*$width auto;
+}
+
+.bubble {
+  width: 50vw;
+  height: 85vh;
+  overflow: hidden;
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include box-container( 6px, black );
+}
+
+@media (max-width: $tablet-view-medium) {
+  .bubble {
+    width: 80vw;
+    height: 80vh;
+  }
+}
