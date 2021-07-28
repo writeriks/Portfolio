@@ -23,7 +23,7 @@ function Testimonials(props: any) {
   })
 
   return (
-    <div className='testimonials' id="testimonials" ref={viewPortRef}>
+    <div className="testimonials" id="testimonials" ref={viewPortRef}>
 
     </div>
   )

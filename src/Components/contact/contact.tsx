@@ -23,7 +23,7 @@ function Contact(props: any) {
     }
   })
   return (
-    <div className='contact' id='contact' ref={viewPortRef}>
+    <div className="contact" id="contact" ref={viewPortRef}>
 
     </div>
   )

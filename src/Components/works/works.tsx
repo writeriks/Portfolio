@@ -23,7 +23,7 @@ function Works(props: any) {
   })
 
   return (
-    <div className='works' id="works" ref={viewPortRef}>
+    <div className="works" id="works" ref={viewPortRef}>
 
     </div>
   )
