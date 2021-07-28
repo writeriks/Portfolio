@@ -1,3 +1,68 @@
-.portfolio{
+@import '../../style-utility/variables';
+
+@keyframes fadeIn {
+  0% {opacity:0; transform: translateY(85vh);}
+  100% {opacity:1; transform: translateY(0);}
+}
+
+.portfolio {
   background: linear-gradient(to bottom, #2f2824, #172b26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+
+  .self-description {
+    margin-bottom: 30px;
+    display: flex;
+    font-weight: 500;
+  }
+
+  .tech-i-use {
+    a {
+      font-weight: 900;
+    }
+
+    ul {
+      animation-name: fadeIn;
+      animation-duration: 1s;
+      padding-top: 10px;
+
+      li {
+        height: auto;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .tech {
+          display: flex;
+        }
+
+        .stars {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: $tablet-view-small) {
+  .portfolio {
+    font-size: 20px;
+
+    .tech-i-use {
+      ul{
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+.inner {
+  width: 98%;
+  height: 98%;
+  overflow-y: hidden;
 }
