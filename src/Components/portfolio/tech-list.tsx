@@ -16,40 +16,42 @@ const TechList = () => {
     return component
   }
 
-  return (<ul>
-    <li>
-      <span className="tech">
-        Javascript
-      </span>
-      <span className="stars">
-        {starsComponent(4)}
-      </span>
-    </li>
-    <li>
-      <span className="tech">
-        React
-      </span>
-      <span className="stars">
-        {starsComponent(3)}
-      </span>
-    </li>
-    <li>
-      <span className="tech">
-        Redux
-      </span>
-      <span className="stars">
-        {starsComponent(3)}
-      </span>
-    </li>
-    <li>
-      <span className="tech">
-        CSS
-      </span>
-      <span className="stars">
-        {starsComponent(3)}
-      </span>
-    </li>
-  </ul>)
+  return (
+    <ul>
+      <li>
+        <span className="tech">
+          Javascript
+        </span>
+        <span className="stars">
+          {starsComponent(4)}
+        </span>
+      </li>
+      <li>
+        <span className="tech">
+          React
+        </span>
+        <span className="stars">
+          {starsComponent(3)}
+        </span>
+      </li>
+      <li>
+        <span className="tech">
+          Redux
+        </span>
+        <span className="stars">
+          {starsComponent(3)}
+        </span>
+      </li>
+      <li>
+        <span className="tech">
+          CSS
+        </span>
+        <span className="stars">
+          {starsComponent(3)}
+        </span>
+      </li>
+    </ul>
+  )
 }
 
 export default TechList

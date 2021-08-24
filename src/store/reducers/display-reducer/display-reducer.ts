@@ -2,7 +2,8 @@ import { DisplayAction, DisplayActions, DisplayState } from './display-reducer-t
 
 export const initialDisplayState = {
   isHamburgerMenuOpen: false,
-  componentInViewPort: ''
+  componentInViewPort: '',
+  isTechListShown: false
 }
 
 const displayReducer = (state: DisplayState = initialDisplayState, action: DisplayAction): DisplayState => {
@@ -17,6 +18,12 @@ const displayReducer = (state: DisplayState = initialDisplayState, action: Displ
       return {
         ...state,
         componentInViewPort: action.componentInViewPort
+      }
+
+    case DisplayActions.SET_TECH_LIST_SHOWN:
+      return {
+        ...state,
+        isTechListShown: action.isTechListShown
       }
 
     default:

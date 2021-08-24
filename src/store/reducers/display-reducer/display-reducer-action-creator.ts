@@ -13,6 +13,13 @@ class DisplayReducerActionCreator {
       componentInViewPort
     }
   }
+
+  setIsTechListShown(isTechListShown: boolean): DisplayAction {
+    return {
+      type: DisplayActions.SET_TECH_LIST_SHOWN,
+      isTechListShown
+    }
+  }
 }
 
 const displayReducerActionCreator = new DisplayReducerActionCreator()

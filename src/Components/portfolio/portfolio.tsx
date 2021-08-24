@@ -1,14 +1,17 @@
 import React, { useRef, useEffect } from 'react'
 import { useInViewport } from 'react-in-viewport'
 import Bubble from './bubble'
-import TechIUse from './tech-i-use'
-import Typing from 'react-typing-animation'
 import { store } from '../../store/createStore'
 import displayReducerActionCreator from '../../store/reducers/display-reducer/display-reducer-action-creator'
 import { ComponentsInViewport } from '../../store/reducers/display-reducer/display-reducer-types'
 import './portfolio.scss'
+import PortfolioStoryWithTyping from './portfolio-story-witht-typing'
+import { useSelector } from 'react-redux'
+import displayReducerSelector from '../../store/reducers/display-reducer/display-reducer-selector'
+import PortfolioStoryWithoutTyping from './portfolio-story-without-typing'
 
 function Portfolio(props: any) {
+  const isTechListShown = useSelector(displayReducerSelector.getIsTechListShown)
   const viewPortRef: any = useRef()
   const {
     inViewport
@@ -23,30 +26,13 @@ function Portfolio(props: any) {
     if (inViewport) {
       store.dispatch(displayReducerActionCreator.setComponentInViewPort(ComponentsInViewport.PORTFOLIO))
     }
-  })
+  }, [])
 
   return (
     <div className="portfolio" id="portfolio" ref={viewPortRef}>
       <Bubble >
         {
-          inViewport &&
-          (
-            <>
-              <span className="self-description">
-                <span>
-                  <Typing speed={10}>
-                    <p>I am a software engineer living in Warsaw, Poland. Currently i work for Microstrategy Poland.</p>
-                    <Typing.Delay ms={500} />
-                    <p>I love programming, travelling, doing sport and playing computer games...</p>
-                    <Typing.Delay ms={500} />
-                  </Typing>
-                </span>
-              </span>
-              <span className="tech-i-use">
-                <TechIUse />
-              </span>
-            </>
-          )
+          inViewport && (isTechListShown ? <PortfolioStoryWithoutTyping /> : <PortfolioStoryWithTyping />)
         }
       </Bubble>
     </div>

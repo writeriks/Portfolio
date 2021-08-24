@@ -11,6 +11,11 @@ class DisplayReducerSelector {
     rootStateReducer.getDisplayReducer,
     (displayReducer) => displayReducer.componentInViewPort
   );
+
+  getIsTechListShown = createSelector(
+    rootStateReducer.getDisplayReducer,
+    (displayReducer) => displayReducer.isTechListShown
+  );
 }
 
 const displayReducerSelector = new DisplayReducerSelector()
