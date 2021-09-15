@@ -9,9 +9,12 @@ import { sideBarMenuConstants } from './side-bar-menu-constants'
 const SideBarMenu = () => {
   const isHamburgerMenuOpen = useSelector(displayReducerSelector.getIsHamburgerMenuOpen)
   const active = classNames({ active: isHamburgerMenuOpen })
+  const componentInViewPort = useSelector(displayReducerSelector.getComponentInViewport)
+  const viewPortComponent = componentInViewPort.toLowerCase()
+  const color = classNames(viewPortComponent)
 
   return (
-    <div className={'side-bar-menu ' + active}>
+    <div className={'side-bar-menu ' + active + ' ' + color}>
       <ul>
         {
           sideBarMenuConstants.map((element, index) =>

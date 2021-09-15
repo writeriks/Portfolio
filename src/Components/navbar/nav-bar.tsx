@@ -1,13 +1,13 @@
 import React from 'react'
-import './nav-bar.scss'
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import classnames from 'classnames'
 import { useSelector } from 'react-redux'
-import displayReducerSelector from '../../store/reducers/display-reducer/display-reducer-selector'
 import navBarHelper from './nav-bar-helper'
+import classnames from 'classnames'
+import displayReducerSelector from '../../store/reducers/display-reducer/display-reducer-selector'
+import './nav-bar.scss'
 
 const NavBar = () => {
   const isHamburgerMenuOpen = useSelector(displayReducerSelector.getIsHamburgerMenuOpen)
