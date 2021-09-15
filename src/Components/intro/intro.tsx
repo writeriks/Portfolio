@@ -22,7 +22,7 @@ const Intro = (props: any) => {
     if (inViewport) {
       store.dispatch(displayReducerActionCreator.setComponentInViewPort(ComponentsInViewport.INTRO))
     }
-  })
+  }, [inViewport])
 
   return (
     <div className="intro" id="intro" ref={myRef}>

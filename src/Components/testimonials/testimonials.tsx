@@ -20,7 +20,7 @@ function Testimonials(props: any) {
     if (inViewport) {
       store.dispatch(displayReducerActionCreator.setComponentInViewPort(ComponentsInViewport.TESTIMONIALS))
     }
-  })
+  }, [inViewport])
 
   return (
     <div className="testimonials" id="testimonials" ref={viewPortRef}>

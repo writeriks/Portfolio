@@ -7,9 +7,9 @@ const TechList = () => {
 
     const component = starArray.map(number => {
       if (number <= count) {
-        return <Star isFilled={true} />
+        return <Star key={number} isFilled={true} />
       } else {
-        return <Star isFilled={false} />
+        return <Star key={number} isFilled={false} />
       }
     })
 

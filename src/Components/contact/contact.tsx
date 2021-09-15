@@ -21,7 +21,7 @@ function Contact(props: any) {
     if (inViewport) {
       store.dispatch(displayReducerActionCreator.setComponentInViewPort(ComponentsInViewport.CONTACT))
     }
-  })
+  }, [inViewport])
   return (
     <div className="contact" id="contact" ref={viewPortRef}>
 

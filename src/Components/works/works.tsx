@@ -20,7 +20,7 @@ function Works(props: any) {
     if (inViewport) {
       store.dispatch(displayReducerActionCreator.setComponentInViewPort(ComponentsInViewport.WORKS))
     }
-  })
+  }, [inViewport])
 
   return (
     <div className="works" id="works" ref={viewPortRef}>
