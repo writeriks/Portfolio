@@ -9,8 +9,8 @@ export enum SideBarMenuTypes {
 
 export const sideBarMenuConstants = [
   { elementName: SideBarMenuTypes.Intro },
-  { elementName: SideBarMenuTypes.Portfolio },
-  { elementName: SideBarMenuTypes.Works },
-  { elementName: SideBarMenuTypes.Testimonials },
-  { elementName: SideBarMenuTypes.Contact }
+  { elementName: SideBarMenuTypes.Portfolio }
+  /*   { elementName: SideBarMenuTypes.Works },
+    { elementName: SideBarMenuTypes.Testimonials },
+    { elementName: SideBarMenuTypes.Contact } */
 ]
