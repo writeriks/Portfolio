@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/writeriks.github.io/Portfolio/static/css/main.d1c75199.chunk.css",
+    "main.js": "/writeriks.github.io/Portfolio/static/js/main.2e178991.chunk.js",
+    "main.js.map": "/writeriks.github.io/Portfolio/static/js/main.2e178991.chunk.js.map",
+    "runtime-main.js": "/writeriks.github.io/Portfolio/static/js/runtime-main.ab4d76a8.js",
+    "runtime-main.js.map": "/writeriks.github.io/Portfolio/static/js/runtime-main.ab4d76a8.js.map",
+    "static/js/2.82d006e8.chunk.js": "/writeriks.github.io/Portfolio/static/js/2.82d006e8.chunk.js",
+    "static/js/2.82d006e8.chunk.js.map": "/writeriks.github.io/Portfolio/static/js/2.82d006e8.chunk.js.map",
+    "index.html": "/writeriks.github.io/Portfolio/index.html",
+    "static/css/main.d1c75199.chunk.css.map": "/writeriks.github.io/Portfolio/static/css/main.d1c75199.chunk.css.map",
+    "static/js/2.82d006e8.chunk.js.LICENSE.txt": "/writeriks.github.io/Portfolio/static/js/2.82d006e8.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/writeriks.github.io/Portfolio/static/media/retganon.d22db1f1.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab4d76a8.js",
+    "static/js/2.82d006e8.chunk.js",
+    "static/css/main.d1c75199.chunk.css",
+    "static/js/main.2e178991.chunk.js"
+  ]
+}
