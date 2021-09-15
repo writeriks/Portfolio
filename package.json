@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "writeriks.github.io",
+  "homepage": "writeriks.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
