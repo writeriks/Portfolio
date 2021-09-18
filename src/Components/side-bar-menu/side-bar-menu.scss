@@ -1,9 +1,29 @@
 @import '../../style-utility/variables';
 
+.intro-component{
+  background-color: $color-main;
+}
+
+.portfolio-component{
+  background-color: #2f2824;
+}
+
+.works-component{
+  background-color: #172b26;
+}
+
+.testimonials-component{
+  background-color: #1e1f16;
+}
+
+.contact-component{
+  background-color: #352828;
+}
+
 .side-bar-menu{
   width: 300px;
   height: 100vh;
-  background-color: transparent;
+ /*  background-color: transparent; */
   position: fixed;
   top: 0;
   right: -300px;

@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "writeriks.github.io/Portfolio",
+  "homepage": "https://writeriks.github.io/Portfolio",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -14,6 +14,7 @@
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
     "classnames": "^2.3.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-in-viewport": "^1.0.0-alpha.17",
